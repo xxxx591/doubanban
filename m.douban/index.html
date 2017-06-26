@@ -11,42 +11,47 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-heard">
-                <a href="index.html" class="navbar-brand logo">豆瓣LOGO</a>
-            </div>
-            <button class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+    <div class="bigbox">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-heard">
+                    <a href="index.html" class="navbar-brand logo">豆瓣LOGO</a>
+                </div>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
         		<span class="icon-bar"></span>
         		<span class="icon-bar"></span>
         		<span class="icon-bar"></span>
         	</button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class=" nav navbar-nav navbar-right" id="navbarList">
-                    <li><a href="movie.html">电影</a></li>
-                    <li><a href="">图书</a></li>
-                    <li><a href="">广播</a></li>
-                    <li><a href="">小组</a></li>
-                    <li>
-                        <a class="glyphicon glyphicon-search"></a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class=" nav navbar-nav navbar-right" id="navbarList">
+                        <li><a href="movie.html">电影</a></li>
+                        <li><a href="">图书</a></li>
+                        <li><a href="">广播</a></li>
+                        <li><a href="">小组</a></li>
+                        <li class="search">
+                            <a class="glyphicon glyphicon-search"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container list-container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 rowList"><a href="https://m.douban.com/movie/nowintheater?loc_id=108288">影院热映</a></div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 rowList"><a href="https://m.douban.com/group/explore/rent/">欧美新碟榜</a></div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 rowList"><a href="https://m.douban.com/time/?dt_time_source=douban-msite_shortcut">豆瓣时间</a></div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 rowList"><a href="https://www.douban.com/doubanapp/app?channel=card_home&direct_dl=1">使用豆瓣APP</a></div>
             </div>
         </div>
-    </nav>
-    <div class="container list-container">
-        <div class="row">
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 rowList"><a href="https://m.douban.com/movie/nowintheater?loc_id=108288">影院热映</a></div>
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 rowList"><a href="https://m.douban.com/group/explore/rent/">欧美新碟榜</a></div>
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 rowList"><a href="https://m.douban.com/time/?dt_time_source=douban-msite_shortcut">豆瓣时间</a></div>
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 rowList"><a href="https://www.douban.com/doubanapp/app?channel=card_home&direct_dl=1">使用豆瓣APP</a></div>
+        <div class="container rowNews">
+
+        </div>
+        <div class="container">
+            <button type="button" class="btn btn-success btn-block " id="nextPage">加载更多</button>
         </div>
     </div>
-    <div class="container rowNews">
+    <div class="searchbox">
 
-    </div>
-    <div class="container">
-        <button type="button" class="btn btn-success btn-block " id="nextPage">加载更多</button>
     </div>
 </body>
 <script src="./js/jquery.js"></script>
