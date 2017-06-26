@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/m.douban.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-heard">
+                <a href="index.html" class="navbar-brand logo"><img src="./img/logo.png" class=" img-responsive" alt="豆瓣"></a>
+            </div>
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        	</button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class=" nav navbar-nav navbar-right" id="navbarList">
+                    <li><a href="movie.html" class="active">电影</a></li>
+                    <li><a href="">图书</a></li>
+                    <li><a href="">广播</a></li>
+                    <li><a href="">小组</a></li>
+                    <li>
+                        <a class="glyphicon glyphicon-search"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="movieTitle">
+                <h4 class="movieLeft">&nbsp;&nbsp;影院热映</h4>
+                <p class="movieRight"> <a href="">更多</a> </p>
+            </div>
+            <div class="container">
+                <ul class="inline hotMovie">
+                    <li class="item">
+                        <a href="">
+                            <div class="item-poster">
+
+                            </div>
+                            <p class="item-title">变形金刚5：最后的骑士</p>
+                            <div class="item-rating">
+                                <div class="rank">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="numberIndex" alt="4.8">4.8</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="http://apps.bdimg.com/libs/underscore.js/1.7.0/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/template" id="template">
+    <li class="item">
+        <a href="<%= url %>">
+            <div class="item-poster">
+
+            </div>
+            <p class="item-title">
+                <%= title %>
+            </p>
+            <div class="item-rating">
+                <div class="rank">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="numberIndex" alt="4.8"><%= rating.value %></span>
+                </div>
+            </div>
+        </a>
+    </li>
+</script>
+<script src="./js/movie.douban.js"></script>
+
+</html>

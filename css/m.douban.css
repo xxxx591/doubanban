@@ -1,0 +1,145 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+    color: #666;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 50px;
+}
+
+@media(min-width:300) {
+    #hotMovie {}
+}
+
+.hotMovie {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 0;
+}
+
+.hotMovie li {
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    height: 205px;
+}
+
+.item {
+    margin-left: 0.27rem;
+    width: 100px;
+}
+
+.hotMovie {
+    padding: 15px 0 43px 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    min-width: 205px;
+    max-width: 650px;
+}
+
+.navbar-heard img {
+    height: 100%;
+}
+
+.list-container {
+    margin: 20px auto;
+}
+
+.rowList {
+    background: #F6F6F6;
+    text-align: center;
+    line-height: 20px;
+    padding: 10px 0;
+    margin: 5px 1%;
+    width: 48%;
+}
+
+.rowList a {
+    color: #494949;
+    font-size: 15px;
+    display: block
+}
+
+.newsBox {
+    padding: 10px 0 19px 0;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.rowNews div h4 {
+    color: #494949;
+    line-height: 1.4;
+}
+
+.rowNews div p {
+    color: #aaa;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.newsTitle {
+    color: #aaa;
+    font-size: 12px;
+    height: 14px;
+}
+
+.newsLeft {
+    float: left;
+}
+
+.newsRight {
+    float: right;
+}
+
+#nextPage {
+    margin: 0 auto;
+}
+
+
+/* movie 页面*/
+
+.movieTitle {
+    height: 39px;
+}
+
+.movieLeft {
+    float: left;
+    color: #111;
+    font-size: 1.8rem;
+}
+
+.movieRight {
+    float: right;
+    line-height: 39px;
+}
+
+.movieRight a {
+    color: #42BD56;
+}
+
+.hotMovie a p {
+    color: #111;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.hotMovie a span {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.item-poster {
+    width: 100%;
+    height: 143px;
+    overflow: hidden;
+    background: url(../img/3123.jpg);
+    background-size: cover;
+    background-position: center;
+}
