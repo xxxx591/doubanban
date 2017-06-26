@@ -42,24 +42,7 @@
             </div>
             <div class="container">
                 <ul class="inline hotMovie">
-                    <li class="item">
-                        <a href="">
-                            <div class="item-poster">
 
-                            </div>
-                            <p class="item-title">变形金刚5：最后的骑士</p>
-                            <div class="item-rating">
-                                <div class="rank">
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="numberIndex" alt="4.8">4.8</span>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -71,7 +54,7 @@
 <script type="text/template" id="template">
     <li class="item">
         <a href="<%= url %>">
-            <div class="item-poster">
+            <div class="item-poster" style="background-image:url(<%= cover.url %>)">
 
             </div>
             <p class="item-title">
@@ -84,7 +67,7 @@
                     <span class="glyphicon glyphicon-star"></span>
                     <span class="glyphicon glyphicon-star"></span>
                     <span class="glyphicon glyphicon-star"></span>
-                    <span class="numberIndex" alt="4.8"><%= rating.value %></span>
+                    <span class="numberIndex" alt="4.8">4.8</span>
                 </div>
             </div>
         </a>

@@ -9,16 +9,13 @@ function movie() {
         dataType: "jsonp",
         success: function(data) {
             var data = data.subject_collection_items;
-            console.log(data)
             var moviefall = '';
             $.each(data, function(index, val) {
-                if (data[index].rating == null) {
-                    data[index].rating.value = 0;
-                    console.log(1);
-                }
+                console.log(data[index]);
+
                 moviefall += tempStr(val)
             });
-
+            $('.hotMovie').append(moviefall);
         }
     });
     var numberIndex = $('.numberIndex').html();
